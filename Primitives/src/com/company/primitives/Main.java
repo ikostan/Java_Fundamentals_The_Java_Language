@@ -29,5 +29,15 @@ public class Main {
                 String.format("dataValue: {%d}, myVar: {%d}",
                                 dataValue,
                                 myVar));
+
+        //Math operators: -, +, /, *, %
+        System.out.println(bt + dataValue / myVar);
+
+        //Type conversion:
+        int k = bt; //byte to int -> widening
+        System.out.println(k);
+
+        byte btn = (byte) k; //int to byte -> narrowing
+        System.out.println(btn);
     }
 }
