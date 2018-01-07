@@ -1,7 +1,11 @@
+/**
+ * My first JAVA app
+ * Console app that prints "Hello World!" text
+ * */
 public class Main {
+
     /**
-     * My first JAVA app
-     * Console app that prints "Hello World!" text
+     * Main method, will be executed by default
      * */
     public static void main(String[] args) {
 
