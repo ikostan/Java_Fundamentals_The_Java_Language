@@ -11,6 +11,23 @@ public class Main {
         int myVar;
         myVar = 10;
 
-        System.out.println(String.format("dataValue: {%d}, myVar: {%d}", dataValue, myVar));
+        byte bt = 120;
+        short sh = 30534;
+        long ln = 356735673567356L;
+
+        double d = 0.95D;
+        boolean bool = true;
+        char ch = 'a';
+        char unicodeCh = '\u00DA'; // Gives accented U in unicode
+
+        System.out.println(
+                String.format("Integers (max/min): {%d} <-> {%d}",
+                                Integer.MAX_VALUE,
+                                Integer.MIN_VALUE));
+
+        System.out.println(
+                String.format("dataValue: {%d}, myVar: {%d}",
+                                dataValue,
+                                myVar));
     }
 }
