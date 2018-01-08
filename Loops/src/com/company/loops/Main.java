@@ -19,5 +19,10 @@ public class Main {
             System.out.println(String.format("%d", i));
             i--;
         }while ( i > 0);
+
+        int[] arr = {111,222,333,444,555,666,777,888,999};
+        for(int n : arr){
+            System.out.println(n);
+        }
     }
 }
