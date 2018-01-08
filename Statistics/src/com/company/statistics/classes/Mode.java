@@ -7,7 +7,7 @@ import java.util.List;
 public class Mode {
 
     //Find mode - the most common number
-    private static int clacMode(int[] numbers){
+    public static int clacMode(int[] numbers){
 
         List<Integer> set = new ArrayList<>();
 
