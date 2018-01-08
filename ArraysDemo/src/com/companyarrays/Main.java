@@ -1,5 +1,7 @@
 package com.companyarrays;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -9,6 +11,16 @@ public class Main {
         for (int i : intArr){
 
          System.out.print(i + ", ");
+        }
+
+        System.out.println();
+
+        Random rnd = new Random();
+        float[] fltArr = new float[10];
+        for (int i = 0; i < fltArr.length; i++){
+
+            fltArr[i] = rnd.nextFloat();
+            System.out.print(fltArr[i] + ", ");
         }
     }
 }
