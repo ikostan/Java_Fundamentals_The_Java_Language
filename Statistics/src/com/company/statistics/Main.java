@@ -11,9 +11,16 @@ public class Main {
         //meanMedianMode();
         //quartiles();
         //weightedMean();
-        interquartileRange();
+        //interquartileRange();
     }
 
+    private static void standardDeviation(){
+
+        int size = 5;
+        int[] nums = {10, 40, 30, 50, 20};
+
+
+    }
 
     private static void interquartileRange(){
 
