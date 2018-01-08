@@ -12,14 +12,21 @@ public class Main {
         //quartiles();
         //weightedMean();
         //interquartileRange();
+        standardDeviation();
     }
 
     private static void standardDeviation(){
 
+        /*
+            5
+            10 40 30 50 20
+            -> 14.1
+        */
+
         int size = 5;
         int[] nums = {10, 40, 30, 50, 20};
 
-
+        System.out.println(String.format("%.1f", StandardDeviation.calcStandardDeviation(size, nums)));
     }
 
     private static void interquartileRange(){
