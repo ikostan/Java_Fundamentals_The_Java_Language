@@ -6,4 +6,6 @@ this repository provides you with everything you need to quickly ramp up and bec
 
 IntelliJ IDEA IDE: https://www.jetbrains.com/idea/
 
+Statistics Challenges: https://www.hackerrank.com/domains/tutorials/10-days-of-statistics
+
 Source: https://app.pluralsight.com/library/courses/java-fundamentals-language/description

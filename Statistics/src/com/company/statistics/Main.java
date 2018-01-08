@@ -10,6 +10,17 @@ public class Main {
 
         meanMedianMode();
         quartiles();
+        weightedMean();
+    }
+
+
+    private static void weightedMean(){
+
+        int size = 5;
+        int[] nums = {10, 40, 30, 50, 20};
+        int[] weight = {1, 2, 3, 4, 5};
+
+        System.out.println(String.format("Weighted Mean: %.1f", WeightedMean.calcWeightedMean(size, nums, weight)));
     }
 
     private static void quartiles(){
