@@ -1,10 +1,6 @@
 package com.company.statistics;
 
-import com.company.statistics.classes.Mean;
-import com.company.statistics.classes.Median;
-import com.company.statistics.classes.Mode;
-import com.company.statistics.classes.Sum;
-
+import com.company.statistics.classes.*;
 import java.util.Arrays;
 
 public class Main {
@@ -13,7 +9,23 @@ public class Main {
     public static void main(String[] args) {
 
         meanMedianMode();
+        quartiles();
+    }
 
+    private static void quartiles(){
+
+        //Day 1: Quartiles
+        //Source: https://www.hackerrank.com/challenges/s10-quartiles/problem
+        //In this challenge, we practice calculating quartiles.
+        int size = 9;
+        int[] arr = {3, 7, 8, 5, 12, 14, 21, 13, 18};
+        // 3, 5, 7, 8, 12, 13, 14, 18, 21
+        Arrays.sort(arr);
+
+        double[] q = Quartile.calcQuartiles(arr, size);
+        System.out.println(String.format("Q1 {%.1f}", q[0]));
+        System.out.println(String.format("Q2 {%.1f}", q[1]));
+        System.out.println(String.format("Q3 {%.1f}", q[2]));
     }
 
     private static void meanMedianMode(){
