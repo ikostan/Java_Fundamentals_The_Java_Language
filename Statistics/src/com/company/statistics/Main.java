@@ -8,11 +8,61 @@ public class Main {
     //Source: https://www.hackerrank.com/challenges/s10-basic-statistics
     public static void main(String[] args) {
 
-        meanMedianMode();
-        quartiles();
-        weightedMean();
+        //meanMedianMode();
+        //quartiles();
+        //weightedMean();
+        interquartileRange();
     }
 
+
+    private static void interquartileRange(){
+
+        int size = 6;
+        // 6, 8, 10, 12, 16, 20
+        int[]nums = {6, 12, 8, 10, 20, 16};
+        //int[]freq = {5, 4, 3, 2, 1, 5}; // -> 9.0
+        int[]freq = {5, 6, 7, 8, 9, 10};  // -> 8.0
+
+        /*
+        Test cases:
+
+        #1: -> 9.0
+            6
+            6 12 8 10 20 16
+            5 4 3 2 1 5
+
+        #2: -> 8.0
+
+            6
+            6 12 8 10 20 16
+            5 6 7 8 9 10
+
+        #3: -> 30.0
+            30
+            10 40 30 50 20 10 40 30 50 20 1 2 3 4 5 6 7 8 9 10 20 10 40 30 50 20 10 40 30 50
+            1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 10 40 30 50 20 10 40 30 50 20
+
+         #4: -> 5.0
+
+            20
+            10 40 30 50 20 10 40 30 50 20 1 2 3 4 5 6 7 8 9 10
+            1 2 3 4 5 6 7 8 9 10 10 40 30 50 20 10 40 30 50 20
+
+         #5: -> 20.0
+
+            10
+            10 40 30 50 20 10 40 30 50 20
+            1 2 3 4 5 6 7 8 9 10
+
+          #6: -> 30.0
+
+            5
+            10 40 30 50 20
+            1 2 3 4 5
+        */
+
+        System.out.println(InterquartileRange.calcInterquartileRange(size, nums, freq));
+    }
 
     private static void weightedMean(){
 
