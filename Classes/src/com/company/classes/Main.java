@@ -8,19 +8,43 @@ public class Main {
 
     public static void main(String[] args) {
 
-        //ClassA ac = new ClassC();
-        //ClassA ab = new ClassB();
-        //ClassA a = new ClassA();
-        //ClassB b = new ClassB();
-        ClassC c = new ClassC();
-        //ClassB bc = new ClassC();
+        //inheritSample();
+        paramsSample();
+    }
 
-        //testClass(ac);
-        //testClass(ab);
-        //testClass(a);
-        //testClass(b);
+    private static void paramsSample(){
+
+        ClassA a = new ClassA();
+        a.setParamA(1);
+        a.setParamB(2);
+        System.out.println(String.format("a: %d, b: %d", a.getParamA(), a.getParamB()));
+
+        swapValues(a);
+        System.out.println(String.format("a: %d, b: %d", a.getParamA(), a.getParamB()));
+    }
+
+    private static void swapValues(ClassA a){
+
+        int temp = a.getParamA();
+        a.setParamA(a.getParamB());
+        a.setParamB(temp);
+    }
+
+    private static void inheritSample(){
+
+        ClassA ac = new ClassC();
+        ClassA ab = new ClassB();
+        ClassA a = new ClassA();
+        ClassB b = new ClassB();
+        ClassC c = new ClassC();
+        ClassB bc = new ClassC();
+
+        testClass(ac);
+        testClass(ab);
+        testClass(a);
+        testClass(b);
         testClass(c);
-        //testClass(bc);
+        testClass(bc);
     }
 
     private static void testClass(ClassA a){
