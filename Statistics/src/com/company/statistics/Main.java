@@ -12,7 +12,15 @@ public class Main {
         //quartiles();
         //weightedMean();
         //interquartileRange();
-        standardDeviation();
+        //standardDeviation();
+        binomialDistribution();
+    }
+
+
+    private static void binomialDistribution(){
+
+        BinominalDistro bd = new BinominalDistro(1.09, 1, 6, 3);
+        System.out.println(String.format("%.3f", bd.calcEvent()));
     }
 
     private static void standardDeviation(){
