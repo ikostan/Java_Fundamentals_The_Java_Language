@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1bd5f49d-2c3a-45ed-aef3-690f95c5abf9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/statistics/classes/BinominalDistro.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/statistics/Main.java" afterPath="$PROJECT_DIR$/src/com/company/statistics/Main.java" />
+      <change beforePath="$PROJECT_DIR$/out/production/Statistics/com/company/statistics/Main.class" afterPath="$PROJECT_DIR$/out/production/Statistics/com/company/statistics/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Statistics/com/company/statistics/classes/StandardDeviation.class" afterPath="$PROJECT_DIR$/out/production/Statistics/com/company/statistics/classes/StandardDeviation.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -255,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1515387520927</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Statistics -&gt; Binominal Distro">
+      <created>1515615771140</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1515615771140</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Statistics -&gt; Binominal Distro">
+      <created>1515615791948</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1515615791948</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -304,7 +318,8 @@
     <MESSAGE value="Readme updated" />
     <MESSAGE value="InterquartileRange -&gt; done" />
     <MESSAGE value="StandardDeviation -&gt; new lass" />
-    <option name="LAST_COMMIT_MESSAGE" value="StandardDeviation -&gt; new lass" />
+    <MESSAGE value="Statistics -&gt; Binominal Distro" />
+    <option name="LAST_COMMIT_MESSAGE" value="Statistics -&gt; Binominal Distro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
