@@ -9,7 +9,25 @@ public class Main {
     public static void main(String[] args) {
 
         //inheritSample();
-        paramsSample();
+        //paramsSample();
+        strBuilderSample();
+    }
+
+    private static void strBuilderSample(){
+
+        int maxChars = 40;
+        StringBuilder sb = new StringBuilder(maxChars);
+        System.out.println("Max capacity: " + sb.capacity());
+        sb.append("Hello");
+        System.out.println(sb);
+        sb.append(" World!");
+        System.out.println(sb);
+        int indx = sb.indexOf(" ");
+        sb.insert(indx, " My");
+        System.out.println(sb);
+        sb.delete(0, sb.length());
+        System.out.println(sb);
+
     }
 
     private static void paramsSample(){
