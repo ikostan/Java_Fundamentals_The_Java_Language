@@ -14,9 +14,10 @@ public class Main {
 
     private static void paramsSample(){
 
-        ClassA a = new ClassA();
+        ClassC a = new ClassC();
         a.setParamA(1);
         a.setParamB(2);
+        a.methodC();
         System.out.println(String.format("a: %d, b: %d", a.getParamA(), a.getParamB()));
 
         swapValues(a);

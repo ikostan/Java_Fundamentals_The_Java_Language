@@ -38,4 +38,9 @@ public class ClassA {
     public void setParamB(int paramB) {
         this.paramB = paramB;
     }
+
+    public String getClassName(){
+
+        return this.className;
+    }
 }
