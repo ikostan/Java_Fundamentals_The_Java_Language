@@ -3,8 +3,26 @@ package com.company.interfaces;
 public class Person implements Comparable<Person> {
 
     private String firstName;
-    private String LastName;
+    private String lastName;
     private int age;
+
+    public Person(){
+
+        this.age = 0;
+    }
+
+    public Person(String firstName, String lastName){
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public Person(String firstName, String lastName, int age) throws Exception{
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        setAge(age);
+    }
 
     public String getFirstName() {
         return firstName;
@@ -15,19 +33,26 @@ public class Person implements Comparable<Person> {
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public void setLastName(String lastName) {
-        LastName = lastName;
+        this.lastName = lastName;
     }
 
     public int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int age) throws  Exception {
+
+        if(age >= 0){
+            this.age = age;
+        }
+        else{
+
+            throw new Exception("Age must be greater or equal to zero!");
+        }
     }
 
     @Override
