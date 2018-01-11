@@ -11,16 +11,16 @@ public class Person implements Comparable<Person> {
         this.age = 0;
     }
 
-    public Person(String firstName, String lastName){
+    public Person(String firstName, String lastName) throws Exception{
 
-        this.firstName = firstName;
-        this.lastName = lastName;
+        setFirstName(firstName);
+        setLastName(lastName);
     }
 
     public Person(String firstName, String lastName, int age) throws Exception{
 
-        this.firstName = firstName;
-        this.lastName = lastName;
+        setFirstName(firstName);
+        setLastName(lastName);
         setAge(age);
     }
 
@@ -28,16 +28,32 @@ public class Person implements Comparable<Person> {
         return firstName;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setFirstName(String firstName) throws Exception{
+
+        if(isNameValid(firstName.trim())){
+
+            this.firstName = firstName.trim();
+        }
+        else{
+
+            throw new Exception("Name must be at least 2 chars long!");
+        }
     }
 
     public String getLastName() {
         return lastName;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastName(String lastName) throws Exception{
+
+        if(isNameValid(lastName.trim())){
+
+            this.lastName = lastName.trim();
+        }
+        else{
+
+            throw new Exception("Name must be at least 2 chars long!");
+        }
     }
 
     public int getAge() {
@@ -52,6 +68,18 @@ public class Person implements Comparable<Person> {
         else{
 
             throw new Exception("Age must be greater or equal to zero!");
+        }
+    }
+
+    private boolean isNameValid(String name){
+
+        if(name.length() >= 2){
+
+            return true;
+        }
+        else{
+
+            return false;
         }
     }
 
