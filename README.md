@@ -8,11 +8,11 @@ this repository provides you with everything you need to quickly ramp up and bec
 
 ### Topics:<br/>
 - Java Runtime Environment (JRE)<br/>
-- Conditions and loops
+- Conditions and loops<br/>
 - Data types<br/>
 - Exception handling<br/>
 - Classes (inheritance, encapsulation, methods, etc)<br/>
-- Interfaces
+- Interfaces<br/>
 - Streams, files, and the file system<br/>
 - I/O topics specific to working with files such open/closing files, detecting end-of-file, and buffering<br/>
 - Configuring application execution and environments, the features available, PATH and CLASSPATH environment variables<br/>
