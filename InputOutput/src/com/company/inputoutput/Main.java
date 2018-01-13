@@ -9,15 +9,72 @@ public class Main {
         String fileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\file.txt";
         String outFileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\output.txt";
 
-        readByByte(fileName);
-        readByChar(fileName);
-        writeByByte(fileName, outFileName);
+        //readByByte(fileName);
+        //readByChar(fileName);
+        //writeByByte(fileName, outFileName);
+        writeByChar(fileName);
+
+        }
+
+    //Writing one char at a time
+    private static void writeByChar(String fileName){
+
+        System.out.println("Writing one char at a time:\n");
+        Writer writer = null;
+        Reader input = null;
+        int intValue;
+
+        try{
+
+            writer = new StringWriter();
+            input = new StringReader(fileName);
+
+            // -1 indicates that stream has ended
+            while ((intValue = input.read()) >= 0){
+
+                char chrValue = (char) intValue;
+                //System.out.println(chrValue);
+                writer.write(chrValue);
+            }
+
+            System.out.println(writer.toString());
+        }
+        catch (Exception e) {
+
+            e.printStackTrace();
+        }
+        finally{
+
+            if(input != null){
+
+                try {
+
+                    input.close();
+                }
+                catch (Exception e) {
+
+                    e.printStackTrace();
+                }
+            }
+
+            if(writer != null){
+
+                try {
+
+                    writer.close();
+                }
+                catch (Exception e) {
+
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     //Writing one byte at a time
     private static void writeByByte(String fileName, String outFileName){
 
-        System.out.println("Reading one byte at a time:\n");
+        System.out.println("Writing one byte at a time:\n");
         OutputStream output = null;
         InputStream input = null;
 
@@ -150,4 +207,5 @@ public class Main {
             }
         }
     }
+
 }
