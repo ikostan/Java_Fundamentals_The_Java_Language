@@ -7,8 +7,68 @@ public class Main {
     public static void main(String[] args) {
 
         String fileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\file.txt";
+        String outFileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\output.txt";
+
         readByByte(fileName);
         readByChar(fileName);
+        writeByByte(fileName, outFileName);
+    }
+
+    //Writing one byte at a time
+    private static void writeByByte(String fileName, String outFileName){
+
+        System.out.println("Reading one byte at a time:\n");
+        OutputStream output = null;
+        InputStream input = null;
+
+        try {
+
+            output = new FileOutputStream(outFileName);
+            input = new FileInputStream(fileName);
+            int intValue;
+
+            // -1 indicates that stream has ended
+            while ((intValue = input.read()) >= 0) {
+
+                byte byteValue = (byte) intValue;
+                System.out.println(byteValue);
+                output.write(byteValue);
+            }
+        }
+        catch (FileNotFoundException e) {
+
+            e.printStackTrace();
+        }
+        catch (IOException e) {
+
+            e.printStackTrace();
+        }
+        finally{
+
+            if(input != null){
+
+                try {
+
+                    input.close();
+                }
+                catch (IOException e) {
+
+                    e.printStackTrace();
+                }
+            }
+
+            if(output != null){
+
+                try {
+
+                    output.close();
+                }
+                catch (IOException e) {
+
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     //Reading one byte at a time
@@ -40,6 +100,7 @@ public class Main {
         finally{
 
             if(input != null){
+
                 try {
 
                     input.close();
@@ -70,22 +131,19 @@ public class Main {
                 System.out.println(chrValue);
             }
         }
-        catch (FileNotFoundException e) {
-
-            e.printStackTrace();
-        }
-        catch (IOException e) {
+        catch (Exception e) {
 
             e.printStackTrace();
         }
         finally{
 
             if(input != null){
+
                 try {
 
                     input.close();
                 }
-                catch (IOException e) {
+                catch (Exception e) {
 
                     e.printStackTrace();
                 }
