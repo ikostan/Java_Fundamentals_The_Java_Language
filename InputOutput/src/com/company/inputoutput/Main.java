@@ -2,6 +2,7 @@ package com.company.inputoutput;
 
 import java.io.*;
 
+
 public class Main {
 
     public static void main(String[] args) {
@@ -12,9 +13,38 @@ public class Main {
         //readByByte(fileName);
         //readByChar(fileName);
         //writeByByte(fileName, outFileName);
-        writeByChar(fileName);
+        //writeByChar(fileName);
+        tryWithResources(fileName, outFileName);
+    }
 
+    //Demo: Try-with-resources:
+    private static void tryWithResources(String fileName, String outFileName){
+
+        int length;
+        char[] buffer = new char[10];
+
+        try(Reader reader = new FileReader(fileName);
+            Writer writer = new FileWriter(outFileName)){
+
+            while ((length = reader.read(buffer)) >= 0){
+
+                for (int i = 0; i < buffer.length; i++){
+
+                    if (i < length){
+
+                        System.out.print((char) buffer[i]);
+                    }
+                }
+
+                writer.write(buffer, 0, length);
+                System.out.println();
+            }
+        } catch (IOException e) {
+
+            e.printStackTrace();
         }
+
+    }
 
     //Writing one char at a time
     private static void writeByChar(String fileName){
