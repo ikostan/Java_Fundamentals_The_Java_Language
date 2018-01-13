@@ -17,6 +17,29 @@ public class Main {
         tryWithResources(fileName, outFileName);
     }
 
+    //Chaining Streams demo
+    private static void chainStreams(InputStream in) throws IOException{
+
+        int lengt;
+        char[] buffer = new char[10];
+
+        try(InputStreamReader inReader = new InputStreamReader(in)){
+
+            while ((lengt = inReader.read(buffer)) >= 0){
+
+                for (int i = 0; i < buffer.length; i++){
+
+                    if (i < lengt){
+
+                        System.out.println(buffer[i]);
+                    }
+                }
+
+                System.out.println();
+            }
+        }
+    }
+
     //Demo: Try-with-resources:
     private static void tryWithResources(String fileName, String outFileName){
 
