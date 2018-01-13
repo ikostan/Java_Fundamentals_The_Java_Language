@@ -17,6 +17,12 @@ public class Main {
         tryWithResources(fileName, outFileName);
     }
 
+    //Files and Buffered Streams
+    private static void buffReader(String fileName){
+
+
+    }
+
     //Chaining Streams demo
     private static void chainStreams(InputStream in) throws IOException{
 
