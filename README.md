@@ -22,6 +22,6 @@ IntelliJ IDEA IDE: https://www.jetbrains.com/idea/
 
 Statistics Challenges: https://www.hackerrank.com/domains/tutorials/10-days-of-statistics
 
-Sources: <br/>
+Sources:<br/>
 https://app.pluralsight.com/library/courses/java-fundamentals-language/description<br/>
 https://app.pluralsight.com/player?course=java-fundamentals-core-platform
