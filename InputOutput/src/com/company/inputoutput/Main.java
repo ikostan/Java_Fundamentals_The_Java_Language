@@ -14,13 +14,26 @@ public class Main {
         //readByChar(fileName);
         //writeByByte(fileName, outFileName);
         //writeByChar(fileName);
-        tryWithResources(fileName, outFileName);
+        //tryWithResources(fileName, outFileName);
+
+        buffReader(fileName);
     }
 
-    //Files and Buffered Streams
+    //Files and Buffered Streams: BBufferedReader
     private static void buffReader(String fileName){
 
+        try(BufferedReader bfReader = new BufferedReader(new FileReader(fileName))){
 
+            String line;
+            while ((line = bfReader.readLine()) != null){
+
+                System.out.println(line);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     //Chaining Streams demo
