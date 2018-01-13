@@ -19,15 +19,24 @@ public class Main {
         buffReader(fileName);
     }
 
-    //Files and Buffered Streams: BBufferedReader
+    //Files and Buffered Streams: BufferedReader
     private static void buffReader(String fileName){
 
         try(BufferedReader bfReader = new BufferedReader(new FileReader(fileName))){
 
-            String line;
-            while ((line = bfReader.readLine()) != null){
+            StringBuilder str = new StringBuilder();
+            int length;
+            char[] buffer = new char[10];
 
-                System.out.println(line);
+            while ((length = bfReader.read(buffer)) >= 0){
+
+                if(str.length() > 0){
+
+                    str.delete(0, str.length() - 1);
+                }
+
+                str.append(buffer, 0, length);
+                System.out.println(str);
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
