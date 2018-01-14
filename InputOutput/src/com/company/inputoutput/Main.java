@@ -1,9 +1,9 @@
 package com.company.inputoutput;
 
 import java.io.*;
-import java.nio.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.List;
 
 
 public class Main {
@@ -19,13 +19,34 @@ public class Main {
         //writeByChar(fileName);
         //tryWithResources(fileName, outFileName);
         //buffReader(fileName);
-        usingNioFile();
+        //usingNioFile(fileName);
+        usingNioAllLines(fileName);
+    }
+
+    //Read all lines using java.nio.file
+    private static void usingNioAllLines(String fileName){
+
+        try{
+
+            List<String> lines = Files.readAllLines(
+                    Paths.get(fileName));
+
+            for (String ln : lines){
+
+                System.out.println(ln);
+            }
+        }
+        catch (IOException e) {
+
+            //e.printStackTrace();
+            System.out.println(e.toString());
+        }
     }
 
     //Accessing files with the java.nio.file:
-    private static void usingNioFile(){
+    private static void usingNioFile(String fileName){
 
-        try (BufferedReader bfReader = Files.newBufferedReader(Paths.get("C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\file.txt"))){
+        try (BufferedReader bfReader = Files.newBufferedReader(Paths.get(fileName))){
 
             String line;
 
