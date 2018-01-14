@@ -1,6 +1,9 @@
 package com.company.inputoutput;
 
 import java.io.*;
+import java.nio.*;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 
 public class Main {
@@ -15,8 +18,27 @@ public class Main {
         //writeByByte(fileName, outFileName);
         //writeByChar(fileName);
         //tryWithResources(fileName, outFileName);
+        //buffReader(fileName);
+        usingNioFile();
+    }
 
-        buffReader(fileName);
+    //Accessing files with the java.nio.file:
+    private static void usingNioFile(){
+
+        try (BufferedReader bfReader = Files.newBufferedReader(Paths.get("C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\file.txt"))){
+
+            String line;
+
+            while((line = bfReader.readLine()) != null){
+
+                 System.out.println(line);
+             }
+        }
+        catch (IOException e) {
+
+            //e.printStackTrace();
+            System.out.println(e.toString());
+        }
     }
 
     //Files and Buffered Streams: BufferedReader
@@ -26,7 +48,7 @@ public class Main {
 
             StringBuilder str = new StringBuilder();
             int length;
-            char[] buffer = new char[10];
+            char[] buffer = new char[600];
 
             while ((length = bfReader.read(buffer)) >= 0){
 
@@ -39,8 +61,10 @@ public class Main {
                 System.out.println(str);
             }
         } catch (FileNotFoundException e) {
+
             e.printStackTrace();
         } catch (IOException e) {
+
             e.printStackTrace();
         }
     }
