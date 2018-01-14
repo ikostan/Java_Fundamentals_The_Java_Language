@@ -1,6 +1,6 @@
 package com.company.classes.classes;
 
-public class Employee extends Worker{
+class Employee extends Worker{
 
     private Timesheet[] unpaidTimesheets;
 

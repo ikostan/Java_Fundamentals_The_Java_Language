@@ -3,7 +3,7 @@ package com.company.classes.classes;
 /*
 * This class will pay salaries for workers
 */
-public class AccountsPayable {
+class AccountsPayable {
 
     //List of creditors
     Payable[] creditors;

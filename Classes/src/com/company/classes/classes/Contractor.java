@@ -3,7 +3,7 @@ package com.company.classes.classes;
 /*
 * Worker that is not employed directly by the company
 */
-public class Contractor extends Worker {
+class Contractor extends Worker {
 
     private Invoice[] invoices;
 
@@ -15,8 +15,7 @@ public class Contractor extends Worker {
     //Return salary rate
     @Override
     protected Money getAmmountDue() {
-        //TODO
-        return null;
+        return new Money(16.5, Currency.USD);
     }
 
     //Add a new (unpaid) invoice
