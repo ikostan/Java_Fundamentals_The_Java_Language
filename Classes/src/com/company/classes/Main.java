@@ -3,6 +3,9 @@ package com.company.classes;
 import com.company.classes.classes.ClassA;
 import com.company.classes.classes.ClassB;
 import com.company.classes.classes.ClassC;
+import com.company.classes.classes.Money;
+
+import java.util.Currency;
 
 public class Main {
 
@@ -10,7 +13,25 @@ public class Main {
 
         //inheritSample();
         //paramsSample();
-        strBuilderSample();
+        //strBuilderSample();
+
+        testMoneyClass();
+    }
+
+    private  static  void testMoneyClass(){
+
+        Money balance = new Money(1.0);
+        Money request = new Money(3.0);
+
+        if(balance.getValue() > request.getValue()){
+
+            dispenseFunds(request);
+        }
+    }
+
+    private static void dispenseFunds(Money amount){
+
+        //TODO
     }
 
     private static void strBuilderSample(){
