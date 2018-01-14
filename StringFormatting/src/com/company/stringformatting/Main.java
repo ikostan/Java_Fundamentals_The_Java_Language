@@ -9,11 +9,11 @@ public class Main {
         //sampleStringJoiner();
         //sampleStringJoinerSuffix();
         //sampleStringJoinerEmpty();
-        sampleStrFormat();
+        simpleStringFormat();
     }
 
-    //String with Format specifier (% + conversion):
-    private static void sampleStrFormat(){
+    //String with basic Format specifier (% + conversion):
+    private static void simpleStringFormat(){
 
         int a = 21, b = 65, c = 45;
         System.out.println(String.format("a: %d, b: %d, c: %d", a, b, c)); //Integers
