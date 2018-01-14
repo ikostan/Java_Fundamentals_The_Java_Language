@@ -25,4 +25,5 @@ Statistics Challenges: https://www.hackerrank.com/domains/tutorials/10-days-of-s
 
 Sources:<br/>
 https://app.pluralsight.com/library/courses/java-fundamentals-language/description<br/>
-https://app.pluralsight.com/player?course=java-fundamentals-core-platform
+https://app.pluralsight.com/player?course=java-fundamentals-core-platform<br/>
+https://app.pluralsight.com/player?course=java-fundamentals-object-oriented-design<br/>

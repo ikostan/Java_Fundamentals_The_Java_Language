@@ -14,8 +14,7 @@ public class Main {
         //inheritSample();
         //paramsSample();
         //strBuilderSample();
-
-        testMoneyClass();
+        //testMoneyClass();
     }
 
     private  static  void testMoneyClass(){
