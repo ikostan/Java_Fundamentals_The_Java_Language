@@ -18,15 +18,16 @@ public class Main {
         //paramsSample();
         //strBuilderSample();
         //testMoneyClass();
-
+        sampleDelegation();
     }
 
     private static void sampleDelegation(){
 
-        Shape[] shapes = new Shape[];
+        Circle[] circles = new Circle[]{};
 
-        for (Shape s : shapes){
-            s.draw(Graphics g);
+        for (Circle c : circles){
+            //TODO
+            //c.draw(Graphics g);
         }
     }
 

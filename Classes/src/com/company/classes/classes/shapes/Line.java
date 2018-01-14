@@ -7,7 +7,7 @@ public class Line extends Shape {
     private int begin, end;
 
     @Override
-    public void draw(Graphics g) {
+    protected void render(Graphics g) {
         //TODO
     }
 }

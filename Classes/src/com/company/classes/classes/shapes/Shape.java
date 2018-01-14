@@ -1,16 +1,19 @@
 package com.company.classes.classes.shapes;
 
-import javafx.scene.paint.Color;
 import java.awt.*;
 
 abstract class Shape {
 
-    protected Color color;
+    private Color color;
 
     public void darken(){
         //TODO
     }
 
-     abstract public void draw(Graphics g);
+    public void draw(Graphics g){
+        g.setColor(this.color);
+        render(g);
+    }
 
+    abstract protected void render(Graphics g);
 }

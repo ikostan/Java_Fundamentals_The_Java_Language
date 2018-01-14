@@ -8,9 +8,7 @@ public class Circle extends Shape{
     private int radius;
 
     @Override
-    public void draw(Graphics g) {
-
-        //g.setColor(super.color);
-        //TODO
+    protected void render(Graphics g) {
+        super.draw(g);
     }
 }
