@@ -4,8 +4,8 @@ import com.company.classes.classes.ClassA;
 import com.company.classes.classes.ClassB;
 import com.company.classes.classes.ClassC;
 import com.company.classes.classes.Money;
+import com.company.classes.classes.Currency;
 
-import java.util.Currency;
 
 public class Main {
 
@@ -20,13 +20,33 @@ public class Main {
 
     private  static  void testMoneyClass(){
 
-        Money balance = new Money(1.0);
-        Money request = new Money(3.0);
+        Money balance = new Money(1.0, Currency.EURO);
+        Money request = new Money(3.0, Currency.USD);
 
-        if(balance.getValue() > request.getValue()){
+        if(balance.isGreaterThan(request)){
+            dispenseFunds(request);
+        }
+        else{
+            System.out.println("You have no enough balance!");
+        }
+
+        /*
+        OLD code
+
+        double normalizedBalance =
+                balance.getValue() * balance.getCurrency().conversionRateTo(Currency.USD);
+        double normalizedRequest =
+                request.getValue() * request.getCurrency().conversionRateTo(Currency.USD);
+
+        if(normalizedBalance > normalizedRequest){
 
             dispenseFunds(request);
         }
+        else{
+
+            System.out.println("You have no enough balance!");
+        }
+         */
     }
 
     private static void dispenseFunds(Money amount){
