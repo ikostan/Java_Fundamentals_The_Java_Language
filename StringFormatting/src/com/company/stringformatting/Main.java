@@ -9,7 +9,21 @@ public class Main {
         //sampleStringJoiner();
         //sampleStringJoinerSuffix();
         //sampleStringJoinerEmpty();
-        simpleStringFormat();
+        //simpleStringFormat();
+        sampleFormatFlags();
+    }
+
+    //Working with Format Flags
+    private static void sampleFormatFlags(){
+
+        //Decimal
+        System.out.println(String.format("%d", 32));
+
+        //Octal
+        System.out.println(String.format("%o", 32));
+
+        //Hexadecimal
+        System.out.println(String.format("%x", 32));
     }
 
     //String with basic Format specifier (% + conversion):
