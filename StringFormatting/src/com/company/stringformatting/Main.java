@@ -7,7 +7,17 @@ public class Main {
     public static void main(String[] args) {
 
         sampleStringJoiner();
-        sampleStringJoiner2();
+        sampleStringJoinerSuffix();
+        sampleStringJoinerEmpty();
+
+    }
+
+    //Work with StringJoiner and empty value:
+    private static void sampleStringJoinerEmpty(){
+
+        StringJoiner sj = new StringJoiner(", ");
+        sj.setEmptyValue("EMPTY");
+        System.out.println(sj);
     }
 
     //Work with StringJoiner:
@@ -27,8 +37,8 @@ public class Main {
         System.out.println(strJoiner);
     }
 
-    //Work with StringJoiner:
-    private static void sampleStringJoiner2(){
+    //Work with StringJoiner and prefix/suffix:
+    private static void sampleStringJoinerSuffix(){
 
         String[] values = new String[]{"A", "B", "C", "D"};
         StringJoiner strJoiner = new StringJoiner("], [", "[", "]");
