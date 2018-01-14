@@ -21,9 +21,48 @@ public class Main {
 
         //Octal
         System.out.println(String.format("%o", 32));
+        //Octal with leading zeroes
+        System.out.println(String.format("%#o", 32));
 
         //Hexadecimal
         System.out.println(String.format("%x", 32));
+        System.out.println(String.format("%X", 32));
+        //Hexadecimal with leading zeroes
+        System.out.println(String.format("%#x", 32));
+
+        //Alignment:
+        //No width:
+        System.out.println(String.format("W: %d, X: %d", 32, 235));
+        System.out.println(String.format("Y: %d, Z: %d", 481, 12));
+
+        //Width 4 chars:
+        System.out.println(String.format("W: %4d, X: %4d", 32, 235));
+        System.out.println(String.format("Y: %4d, Z: %4d", 481, 12));
+
+        //Width 4 chars + leading zeroes, justification to right:
+        System.out.println(String.format("W: %04d, X: %04d", 32, 235));
+        System.out.println(String.format("Y: %04d, Z: %04d", 481, 12));
+
+        //Width 4 chars, justification to left:
+        System.out.println(String.format("W: %-4d, X: %-4d", 32, 235));
+        System.out.println(String.format("Y: %-4d, Z: %-4d", 481, 12));
+
+        //Group separator:
+        System.out.println(String.format("W: %d", 35356765));
+        System.out.println(String.format("W: %,d", 35356765));
+        System.out.println(String.format("W: %,.2f", 35356765.3242));
+
+        //Working with positive and negative values:
+        System.out.println(String.format("W: %d", 123));
+        System.out.println(String.format("W: %d", -234));
+
+        //Adding space as a space holder
+        System.out.println(String.format("W: % d", 123));
+        System.out.println(String.format("W: % d", -234));
+
+        //Using + sign
+        System.out.println(String.format("W: %+d", 123));
+        System.out.println(String.format("W: %+d", -234));
     }
 
     //String with basic Format specifier (% + conversion):
