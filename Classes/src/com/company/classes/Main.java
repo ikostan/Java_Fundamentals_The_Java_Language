@@ -1,8 +1,8 @@
 package com.company.classes;
 
-import com.company.classes.classes.ClassA;
-import com.company.classes.classes.ClassB;
-import com.company.classes.classes.ClassC;
+import com.company.classes.classes.basics.ClassA;
+import com.company.classes.classes.basics.ClassB;
+import com.company.classes.classes.basics.ClassC;
 import com.company.classes.classes.Money;
 import com.company.classes.classes.Currency;
 

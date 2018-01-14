@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ee34d17-0c61-4049-b5e5-f3276d5ce1e4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/Invoice.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/Timesheet.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/Main.class" afterPath="$PROJECT_DIR$/out/production/Classes/com/company/classes/Main.class" />
+      <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/classes/ClassA.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/classes/ClassB.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/classes/ClassC.class" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/com/company/classes/Main.java" afterPath="$PROJECT_DIR$/src/com/company/classes/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/Money.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/Money.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/ClassA.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassA.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/ClassB.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassB.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/ClassC.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,8 +26,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/classes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="167">
+              <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />
@@ -111,6 +115,7 @@
         <option value="$PROJECT_DIR$/src/com/company/classes/classes/Currency.java" />
         <option value="$PROJECT_DIR$/../README.md" />
         <option value="$PROJECT_DIR$/src/com/company/classes/classes/Money.java" />
+        <option value="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java" />
         <option value="$PROJECT_DIR$/src/com/company/classes/Main.java" />
       </list>
     </option>
@@ -284,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515912714809</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Working with classes - Extending classes">
+      <created>1515913337974</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1515913337974</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -320,7 +332,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Working with classes" />
     <MESSAGE value="Working with classes - Money class implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working with classes - Money class implementation" />
+    <MESSAGE value="Working with classes - Extending classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with classes - Extending classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -343,7 +356,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/ClassC.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
@@ -351,7 +364,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/ClassC.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
@@ -391,39 +404,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/ClassC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/ClassB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/ClassA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="43" column="30" lean-forward="false" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-          <folding>
-            <element signature="e#525#526#0" expanded="false" />
-            <element signature="e#554#555#0" expanded="false" />
-            <element signature="e#595#596#0" expanded="false" />
-            <element signature="e#631#632#0" expanded="false" />
-            <element signature="e#661#662#0" expanded="false" />
-            <element signature="e#690#691#0" expanded="false" />
-            <element signature="e#731#732#0" expanded="false" />
-            <element signature="e#767#768#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/ClassC.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="6" column="66" lean-forward="false" selection-start-line="6" selection-start-column="66" selection-end-line="6" selection-end-column="66" />
@@ -477,10 +458,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/classes/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="167">
+          <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />

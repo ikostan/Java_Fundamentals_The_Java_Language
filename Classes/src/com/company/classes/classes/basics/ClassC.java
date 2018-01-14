@@ -1,4 +1,4 @@
-package com.company.classes.classes;
+package com.company.classes.classes.basics;
 
 public class ClassC extends ClassB {
 
