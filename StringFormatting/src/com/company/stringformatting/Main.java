@@ -6,10 +6,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        sampleStringJoiner();
-        sampleStringJoinerSuffix();
-        sampleStringJoinerEmpty();
+        //sampleStringJoiner();
+        //sampleStringJoinerSuffix();
+        //sampleStringJoinerEmpty();
+        sampleStrFormat();
+    }
 
+    //String with Format specifier:
+    private static void sampleStrFormat(){
+
+        int a = 21, b = 65, c = 45;
+        System.out.println(String.format("a: %d, b: %d, c: %d", a, b, c));
     }
 
     //Work with StringJoiner and empty value:
@@ -17,6 +24,9 @@ public class Main {
 
         StringJoiner sj = new StringJoiner(", ");
         sj.setEmptyValue("EMPTY");
+        System.out.println(sj);
+
+        sj.add("some value");
         System.out.println(sj);
     }
 
