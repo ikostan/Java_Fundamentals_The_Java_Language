@@ -5,12 +5,13 @@ package com.company.classes.classes;
 */
 public class AccountsPayable {
 
-    Worker[] workers;
+    //List of creditors
+    Payable[] creditors;
 
     //Pay salary for all
     public void PayEvrybody(){
-        for(Worker w : workers){
-            w.pay();
+        for(Payable c : creditors){
+            c.pay();
         }
     }
 }

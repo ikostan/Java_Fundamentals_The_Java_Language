@@ -12,6 +12,7 @@ public class Contractor extends Worker {
         super(name);
     }
 
+    //Return salary rate
     @Override
     protected Money getAmmountDue() {
         //TODO

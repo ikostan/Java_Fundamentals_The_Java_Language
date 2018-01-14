@@ -1,6 +1,6 @@
 package com.company.classes.classes;
 
-public abstract class Worker {
+public abstract class Worker implements Payable{
 
     //Class fields
     private String name;
@@ -11,6 +11,7 @@ public abstract class Worker {
     }
 
     //Get payed (using design pattern "Template Method")
+    @Override
     public void pay(){
         Money due = getAmmountDue();
     }

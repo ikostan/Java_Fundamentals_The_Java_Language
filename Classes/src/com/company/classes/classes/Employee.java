@@ -1,6 +1,6 @@
 package com.company.classes.classes;
 
-public class Employee extends Worker {
+public class Employee extends Worker{
 
     private Timesheet[] unpaidTimesheets;
 
@@ -9,6 +9,7 @@ public class Employee extends Worker {
         super(name);
     }
 
+    //Return salary rate
     @Override
     protected Money getAmmountDue() {
         return new Money(12.34, Currency.USD);
