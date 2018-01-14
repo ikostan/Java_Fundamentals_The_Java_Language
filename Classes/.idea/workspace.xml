@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ee34d17-0c61-4049-b5e5-f3276d5ce1e4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/Main.class" afterPath="$PROJECT_DIR$/out/production/Classes/com/company/classes/Main.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/classes/ClassA.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/classes/ClassB.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/classes/ClassC.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/Main.java" afterPath="$PROJECT_DIR$/src/com/company/classes/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/ClassA.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassA.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/ClassB.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassB.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/ClassC.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/basics/ClassC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +18,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/classes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
+            <state relative-caret-position="-793">
               <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -296,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515913337974</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Working with classes - refactoring &gt; basics package">
+      <created>1515913431288</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1515913431304</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -333,7 +332,8 @@
     <MESSAGE value="Working with classes" />
     <MESSAGE value="Working with classes - Money class implementation" />
     <MESSAGE value="Working with classes - Extending classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working with classes - Extending classes" />
+    <MESSAGE value="Working with classes - refactoring &gt; basics package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working with classes - refactoring &gt; basics package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -484,7 +484,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/classes/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
+        <state relative-caret-position="-793">
           <caret line="15" column="10" lean-forward="false" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
