@@ -12,6 +12,12 @@ public class Contractor extends Worker {
         super(name);
     }
 
+    @Override
+    protected Money getAmmountDue() {
+        //TODO
+        return null;
+    }
+
     //Add a new (unpaid) invoice
     public void attachInvoice(Invoice i){
         //TODO

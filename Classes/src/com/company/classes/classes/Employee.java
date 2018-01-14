@@ -9,6 +9,11 @@ public class Employee extends Worker {
         super(name);
     }
 
+    @Override
+    protected Money getAmmountDue() {
+        return new Money(12.34, Currency.USD);
+    }
+
     //Add unpaid timesheet
     public void attachTimesheet(Timesheet i){
         //TODO

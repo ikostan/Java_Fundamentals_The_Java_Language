@@ -1,6 +1,6 @@
 package com.company.classes.classes;
 
-public class Worker {
+public abstract class Worker {
 
     //Class fields
     private String name;
@@ -10,7 +10,11 @@ public class Worker {
         this.name = name;
     }
 
+    //Get payed (using design pattern "Template Method")
     public void pay(){
-        //TODO
+        Money due = getAmmountDue();
     }
+
+    //Ask derived class how much to pay
+    abstract protected Money getAmmountDue();
 }
