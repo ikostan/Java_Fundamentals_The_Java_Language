@@ -14,6 +14,7 @@ this repository provides you with everything you need to quickly ramp up and bec
 - Classes (inheritance, encapsulation, methods, etc)<br/>
 - Interfaces<br/>
 - Streams, files, and the file system<br/>
+- String Formatting and Regular Expressions<br/>
 - I/O topics specific to working with files such open/closing files, detecting end-of-file, and buffering<br/>
 - Configuring application execution and environments, the features available, PATH and CLASSPATH environment variables<br/>
 - Multithreading and concurrency

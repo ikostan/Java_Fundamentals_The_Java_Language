@@ -10,8 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        String fileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\file.txt";
-        String outFileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language\\InputOutput\\src\\com\\company\\inputoutput\\output.txt";
+        String fileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language" +
+                            "\\InputOutput\\src\\com\\company\\inputoutput\\file.txt";
+
+        String outFileName = "C:\\Users\\superadmin\\IdeaProjects\\Java_Fundamentals_The_Java_Language" +
+                                "\\InputOutput\\src\\com\\company\\inputoutput\\output.txt";
 
         //readByByte(fileName);
         //readByChar(fileName);
@@ -20,7 +23,7 @@ public class Main {
         //tryWithResources(fileName, outFileName);
         //buffReader(fileName);
         //usingNioFile(fileName);
-        usingNioAllLines(fileName);
+        //usingNioAllLines(fileName);
     }
 
     //Read all lines using java.nio.file
