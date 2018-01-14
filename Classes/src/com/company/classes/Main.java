@@ -5,6 +5,9 @@ import com.company.classes.classes.basics.ClassB;
 import com.company.classes.classes.basics.ClassC;
 import com.company.classes.classes.Money;
 import com.company.classes.classes.Currency;
+import com.company.classes.classes.shapes.*;
+
+import java.awt.*;
 
 
 public class Main {
@@ -16,6 +19,15 @@ public class Main {
         //strBuilderSample();
         //testMoneyClass();
 
+    }
+
+    private static void sampleDelegation(){
+
+        Shape[] shapes = new Shape[];
+
+        for (Shape s : shapes){
+            s.draw(Graphics g);
+        }
     }
 
     private  static  void testMoneyClass(){
