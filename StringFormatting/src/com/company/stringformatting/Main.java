@@ -12,11 +12,17 @@ public class Main {
         sampleStrFormat();
     }
 
-    //String with Format specifier:
+    //String with Format specifier (% + conversion):
     private static void sampleStrFormat(){
 
         int a = 21, b = 65, c = 45;
-        System.out.println(String.format("a: %d, b: %d, c: %d", a, b, c));
+        System.out.println(String.format("a: %d, b: %d, c: %d", a, b, c)); //Integers
+
+        double d = 3.567867d;
+        System.out.println(String.format("d: %.2f", d)); //Floating point
+
+        String name = "John Doe";
+        System.out.println(String.format("My name is %s", name)); //String
     }
 
     //Work with StringJoiner and empty value:
