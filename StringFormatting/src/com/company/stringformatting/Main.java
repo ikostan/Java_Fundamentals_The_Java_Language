@@ -10,7 +10,21 @@ public class Main {
         //sampleStringJoinerSuffix();
         //sampleStringJoinerEmpty();
         //simpleStringFormat();
-        sampleFormatFlags();
+        //sampleFormatFlags();
+        sampleArgIndx();
+    }
+
+    //Argument Index sample:
+    private static void sampleArgIndx(){
+
+        //No index:
+        System.out.println(String.format("%d %d %d", 100, 200, 300));
+
+        //Using index:
+        System.out.println(String.format("%3$d %1$d %2$d", 100, 200, 300));
+
+        //Display value from previous index (%<04d):
+        System.out.println(String.format("%2$d %<04d %1$d", 100, 200, 300));
     }
 
     //Working with Format Flags
