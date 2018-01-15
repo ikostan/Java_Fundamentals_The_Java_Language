@@ -1,6 +1,6 @@
 package com.company.classes.classes.LiskovSubstitution;
 
-public class MonitorableStack<T> extends Stack<T> {
+public class MonitorableStack<T> extends SimpleStack<T> {
 
     //Max size
     private int highWaterMark = 0;

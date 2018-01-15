@@ -2,7 +2,7 @@ package com.company.classes.classes.LiskovSubstitution;
 
 import java.util.ArrayList;
 
-public class Stack<T>{
+public class SimpleStack<T>{
     //ArrayList<T> contents = new ArrayList<>();
     T[] contents = (T[]) new Object[1000];
     private int stackPointer = 0;

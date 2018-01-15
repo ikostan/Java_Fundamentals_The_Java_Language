@@ -2,7 +2,7 @@ package com.company.classes;
 
 import com.company.classes.classes.*;
 import com.company.classes.classes.LiskovSubstitution.MonitorableStack;
-import com.company.classes.classes.LiskovSubstitution.Stack;
+import com.company.classes.classes.LiskovSubstitution.SimpleStack;
 import com.company.classes.classes.basics.ClassA;
 import com.company.classes.classes.basics.ClassB;
 import com.company.classes.classes.basics.ClassC;
@@ -19,7 +19,7 @@ public class Main {
         //strBuilderSample();
         //testMoneyClass();
         //sampleDelegation();
-        //testStack();
+        testStack();
         sampleInterfaces();
     }
 
@@ -41,7 +41,7 @@ public class Main {
 
     private static void testStack(){
 
-        Stack<String> myStack = new Stack<>();
+        SimpleStack<String> myStack = new SimpleStack<>();
         myStack.push("0");
         String s = myStack.pop();
         System.out.println(s);
