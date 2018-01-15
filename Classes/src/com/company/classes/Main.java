@@ -1,5 +1,6 @@
 package com.company.classes;
 
+import com.company.classes.classes.LiskovSubstitution.MonitorableStack;
 import com.company.classes.classes.LiskovSubstitution.Stack;
 import com.company.classes.classes.basics.ClassA;
 import com.company.classes.classes.basics.ClassB;
@@ -18,7 +19,8 @@ public class Main {
         //strBuilderSample();
         //testMoneyClass();
         //sampleDelegation();
-        testStack();
+        //testStack();
+
     }
 
     private static void testStack(){
@@ -27,6 +29,12 @@ public class Main {
         myStack.push("0");
         String s = myStack.pop();
         System.out.println(s);
+
+        //Demo of fragile base class:
+        MonitorableStack<String> myMonitorableStack = new MonitorableStack<>();
+        myMonitorableStack.pushMany(new String[]{"0", "1"});
+        assert myMonitorableStack.maximumSizeSoFar() == 2:
+                "Unexpected max size" + myMonitorableStack.maximumSizeSoFar();
     }
 
     private static void sampleDelegation(){
