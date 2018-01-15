@@ -4,7 +4,6 @@
     <list default="true" id="793fc7b9-0228-4d40-933b-2c2f39db24c5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/StringFormatting/com/company/stringformatting/Main.class" afterPath="$PROJECT_DIR$/out/production/StringFormatting/com/company/stringformatting/Main.class" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/stringformatting/Main.java" afterPath="$PROJECT_DIR$/src/com/company/stringformatting/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +18,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/stringformatting/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33">
+            <state relative-caret-position="-111">
               <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="method#sampleFormatFlags#0;class#Main#0" expanded="false" />
@@ -246,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515986249359</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="String Formatting -&gt; Argument Index sample">
+      <created>1515987033975</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1515987033975</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -288,7 +294,8 @@
     <MESSAGE value="String with basic Format specifier (% + conversion)" />
     <MESSAGE value="Working with Format Flags" />
     <MESSAGE value="OOP -&gt; classes, interfaces, delegates, inheritance" />
-    <option name="LAST_COMMIT_MESSAGE" value="OOP -&gt; classes, interfaces, delegates, inheritance" />
+    <MESSAGE value="String Formatting -&gt; Argument Index sample" />
+    <option name="LAST_COMMIT_MESSAGE" value="String Formatting -&gt; Argument Index sample" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -320,7 +327,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/stringformatting/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
+        <state relative-caret-position="-111">
           <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="method#sampleFormatFlags#0;class#Main#0" expanded="false" />
