@@ -1,9 +1,6 @@
 package com.company.javacollections;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.LinkedList;
+import java.util.*;
 
 public class Main {
 
@@ -20,7 +17,10 @@ public class Main {
     //Common Collection Types: Collection, List, Queue, Set, SortedSet
     private static void sampleSorting(){
 
-
+        TreeSet<MyClass> tree = new TreeSet<>();
+        tree.add(new MyClass("v1", "abc"));
+        tree.add(new MyClass("v2", "sdf"));
+        tree.add(new MyClass("v3", "vbn"));
     }
 
     //Converting between collections and Arrays
