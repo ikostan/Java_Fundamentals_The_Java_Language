@@ -1,6 +1,7 @@
 package com.company.javacollections;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Main {
 
@@ -11,10 +12,25 @@ public class Main {
         sampleCollInterface();
     }
 
-    //Collection Interface
+    //Collection Interface: size, clear, isEmpty, add, addAll
     private static void sampleCollInterface(){
 
+        ArrayList<String> arrList = new ArrayList<>();
+        arrList.clear();
+        arrList.add("Foo");
+        arrList.add("Bar");
 
+        LinkedList<String> lnkList = new LinkedList<>();
+        lnkList.add("Foo");
+        lnkList.add("Bar");
+
+        arrList.addAll(lnkList);
+
+        if(lnkList.isEmpty() == false){
+            for (String s : arrList){
+                System.out.println(s);
+            }
+        }
     }
 
     //Collection sample - basic ArrayList (has no type)
