@@ -13,6 +13,12 @@ public class Main {
         sampleLambda();
     }
 
+    //Converting between collections and Arrays
+    private static void sampleConversion(){
+
+
+    }
+
     //Java 8 features: Lambda
     private static void sampleLambda(){
 
