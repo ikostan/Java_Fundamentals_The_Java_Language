@@ -20,6 +20,7 @@ public class Main {
             //sampleFormatFlags();
             //sampleArgIndx();
             //doWrite(13, 14, 15, 16, 14.75);
+            //sampleRegEx();
 
         }
         catch (Exception e){
@@ -27,7 +28,27 @@ public class Main {
         }
     }
 
-    //Using Regular Expression in order to find strings
+    //Using Regular Expression in order to match strings (pattern matching)
+    private static void sampleRegEx(){
+
+        String s1 = "apple, apple and orange please";
+        //Simple replacement
+        String s2 = s1.replace("ple", "ricot");
+        System.out.println(s2);
+
+        //Replacement at the end of the word only
+        //Does not work for some reason
+        String s3 = s1.replace("ple\\b", "ricot");
+        System.out.println(s3);
+
+        //Split into separate words
+        String[] words = s1.split("\\b");
+        for (String s : words){
+            //Print WORDS only
+            if(s.matches("\\w+"))
+                System.out.println(s);
+        }
+    }
 
     // Using Formatter class,
     // writes content to any type that implements Appendable Interface,
@@ -40,6 +61,7 @@ public class Main {
             f.format("My sons are %d, %d, %d, and %d years old.\n", david, dawson, dillonb, gordon);
             f.format("The average age is %.1f years.\n", avgDiff);
         }
+
     }
 
     //Argument Index sample:
