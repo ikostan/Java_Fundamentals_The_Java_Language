@@ -18,12 +18,22 @@ public class Main {
     //Common Collection Types: Collection, List, Queue, Set, SortedSet
     private static void sampleSorting(){
 
-        TreeSet<MyClass> tree = new TreeSet<>(); //Will be automatically sorted by value
+        //Will be automatically sorted by value
+        TreeSet<MyClass> tree = new TreeSet<>();
         tree.add(new MyClass("v1", "def"));
         tree.add(new MyClass("v2", "dhi"));
         tree.add(new MyClass("v3", "abc"));
 
         tree.forEach((m) -> System.out.println(m));
+        System.out.println();
+
+        //Will be automatically sorted by label
+        TreeSet<MyClass> tree2 = new TreeSet<>(new MyLabelComparator());
+        tree2.add(new MyClass("v3", "def"));
+        tree2.add(new MyClass("v2", "dhi"));
+        tree2.add(new MyClass("v1", "abc"));
+
+        tree2.forEach((m) -> System.out.println(m));
     }
 
     //Converting between collections and Arrays
