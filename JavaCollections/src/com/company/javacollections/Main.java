@@ -24,7 +24,12 @@ public class Main {
         arrList.add(v2);
         arrList.add(v3);
 
-        //Lambda expression:
+        //Lambda expression: forEach
+        arrList.forEach((m) -> System.out.println(m.label));
+
+        //Lambda expression: removeIf
+        arrList.removeIf((m) -> m.value.equals("abc"));
+        System.out.println();
         arrList.forEach((m) -> System.out.println(m.label));
     }
 
