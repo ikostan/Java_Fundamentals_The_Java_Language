@@ -1,4 +1,4 @@
-package com.company.classes.classes;
+package com.company.classes.classes.contracts;
 
 /*
 * Used to connect between AccountsPayable and Worker

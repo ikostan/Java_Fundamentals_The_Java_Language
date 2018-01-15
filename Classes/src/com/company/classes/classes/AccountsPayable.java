@@ -1,5 +1,7 @@
 package com.company.classes.classes;
 
+import com.company.classes.classes.contracts.Payable;
+
 /*
 * This class will pay salaries for workers
 */

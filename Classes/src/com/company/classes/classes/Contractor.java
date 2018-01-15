@@ -1,5 +1,7 @@
 package com.company.classes.classes;
 
+import com.company.classes.classes.contracts.Invoice;
+
 /*
 * Worker that is not employed directly by the company
 */

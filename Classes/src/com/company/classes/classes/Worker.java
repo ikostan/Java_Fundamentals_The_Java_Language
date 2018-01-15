@@ -1,6 +1,8 @@
 package com.company.classes.classes;
 
-public abstract class Worker implements Payable{
+import com.company.classes.classes.contracts.Payable;
+
+public abstract class Worker implements Payable {
 
     //Class fields
     private String name;
