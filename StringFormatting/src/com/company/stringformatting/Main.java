@@ -1,18 +1,30 @@
 package com.company.stringformatting;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.Formatter;
 import java.util.StringJoiner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        //sampleStringJoiner();
-        //sampleStringJoinerSuffix();
-        //sampleStringJoinerEmpty();
-        //simpleStringFormat();
-        //sampleFormatFlags();
-        //sampleArgIndx();
+        try{
+            //sampleStringJoiner();
+            //sampleStringJoinerSuffix();
+            //sampleStringJoinerEmpty();
+            //simpleStringFormat();
+            //sampleFormatFlags();
+            //sampleArgIndx();
+
+            doWrite(13, 14, 15, 16, 14.75);
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 
     // Using Formatter class,
@@ -20,7 +32,12 @@ public class Main {
     // like StringBuilder or StreamWriter
     private static void doWrite(int david, int dawson, int dillonb, int gordon, double avgDiff) throws IOException{
 
-        //TODO
+        BufferedWriter bfWriter = Files.newBufferedWriter(Paths.get("myFile.txt"));
+
+        try (Formatter f = new Formatter(bfWriter)){
+            f.format("My sons are %d, %d, %d, and %d years old.\n", david, dawson, dillonb, gordon);
+            f.format("The average age is %.1f years.\n", avgDiff);
+        }
     }
 
     //Argument Index sample:
