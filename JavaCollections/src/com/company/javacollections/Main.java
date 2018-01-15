@@ -16,6 +16,12 @@ public class Main {
         sampleConversion();
     }
 
+    //Common Collection Types: Collection, List, Queue, Set, SortedSet
+    private static void sampleCommonCollectionTypes(){
+
+
+    }
+
     //Converting between collections and Arrays
     private static void sampleConversion(){
 
