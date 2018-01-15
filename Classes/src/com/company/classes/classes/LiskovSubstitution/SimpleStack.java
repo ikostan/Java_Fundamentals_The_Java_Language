@@ -32,6 +32,7 @@ public class SimpleStack<T> implements Stack<T>{
     }
 
     public int size(){
-        return contents.length;
+        //return contents.length;
+        return stackPointer;
     }
 }
