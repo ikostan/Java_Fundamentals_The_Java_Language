@@ -5,4 +5,12 @@ package com.company.classes.classes.contracts;
 */
 public interface Payable {
     void pay();
+
+    //Class that provides a default method implementation
+    public static class Implementation implements Payable{
+        @Override
+        public void pay() {
+            //TODO
+        }
+    }
 }

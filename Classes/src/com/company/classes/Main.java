@@ -1,14 +1,11 @@
 package com.company.classes;
 
+import com.company.classes.classes.*;
 import com.company.classes.classes.LiskovSubstitution.MonitorableStack;
 import com.company.classes.classes.LiskovSubstitution.Stack;
-import com.company.classes.classes.Vendor;
-import com.company.classes.classes.Volunteer;
 import com.company.classes.classes.basics.ClassA;
 import com.company.classes.classes.basics.ClassB;
 import com.company.classes.classes.basics.ClassC;
-import com.company.classes.classes.Money;
-import com.company.classes.classes.Currency;
 import com.company.classes.classes.contracts.Payable;
 import com.company.classes.classes.shapes.*;
 
@@ -23,7 +20,7 @@ public class Main {
         //testMoneyClass();
         //sampleDelegation();
         //testStack();
-
+        sampleInterfaces();
     }
 
     //Using Interface instead of Inheritance
@@ -31,7 +28,8 @@ public class Main {
 
         Payable[] workers = new Payable[]{
                 new Vendor(),
-                new Volunteer()
+                new Volunteer(),
+                new TemporaryEmployee()
         };
 
         for (Payable w : workers){
