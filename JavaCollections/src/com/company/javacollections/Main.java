@@ -9,7 +9,14 @@ public class Main {
 
         //sampleArrayList();
         //sampleSafeType();
-        sampleCollInterface();
+        //sampleCollInterface();
+        sampleLambda();
+    }
+
+    //Java 8 features: Lambda
+    private static void sampleLambda(){
+
+
     }
 
     //Collection Interface: size, clear, isEmpty, add, addAll
