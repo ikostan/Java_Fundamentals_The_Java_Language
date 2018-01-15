@@ -29,7 +29,9 @@ public class Main {
         Payable[] workers = new Payable[]{
                 new Vendor(),
                 new Volunteer(),
-                new TemporaryEmployee()
+                new TemporaryEmployee(),
+                new Employee("John"),
+                new Contractor("Bill"),
         };
 
         for (Payable w : workers){

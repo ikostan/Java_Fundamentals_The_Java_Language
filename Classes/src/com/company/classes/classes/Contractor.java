@@ -5,7 +5,7 @@ import com.company.classes.classes.contracts.Invoice;
 /*
 * Worker that is not employed directly by the company
 */
-class Contractor extends Worker {
+public class Contractor extends Worker {
 
     private Invoice[] invoices;
 

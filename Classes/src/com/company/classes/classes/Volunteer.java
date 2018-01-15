@@ -4,7 +4,7 @@ import com.company.classes.classes.contracts.Payable;
 
 public class Volunteer implements Payable {
 
-    //Using delegate
+    //Delegate
     private Payable delegate = new Payable.Implementation();
 
     //Using delegate in order to implement method
