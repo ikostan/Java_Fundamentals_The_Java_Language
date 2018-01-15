@@ -1,8 +1,9 @@
 package com.company.classes.classes.LiskovSubstitution;
 
-import java.util.ArrayList;
+import com.company.classes.classes.contracts.Stack;
 
-public class SimpleStack<T>{
+
+public class SimpleStack<T> implements Stack<T>{
     //ArrayList<T> contents = new ArrayList<>();
     T[] contents = (T[]) new Object[1000];
     private int stackPointer = 0;
