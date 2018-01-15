@@ -10,17 +10,20 @@ public class Main {
         //sampleSafeType();
         //sampleCollInterface();
         //sampleLambda();
-        sampleConversion();
+        //sampleConversion();
+        sampleSorting();
     }
 
     //Sorting common collections
     //Common Collection Types: Collection, List, Queue, Set, SortedSet
     private static void sampleSorting(){
 
-        TreeSet<MyClass> tree = new TreeSet<>();
-        tree.add(new MyClass("v1", "abc"));
-        tree.add(new MyClass("v2", "sdf"));
-        tree.add(new MyClass("v3", "vbn"));
+        TreeSet<MyClass> tree = new TreeSet<>(); //Will be automatically sorted by value
+        tree.add(new MyClass("v1", "def"));
+        tree.add(new MyClass("v2", "dhi"));
+        tree.add(new MyClass("v3", "abc"));
+
+        tree.forEach((m) -> System.out.println(m));
     }
 
     //Converting between collections and Arrays
