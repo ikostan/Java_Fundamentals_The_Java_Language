@@ -16,7 +16,16 @@ public class Main {
     //Java 8 features: Lambda
     private static void sampleLambda(){
 
+        ArrayList<MyClass> arrList = new ArrayList<>();
+        MyClass v1 = new MyClass("v1", "abc");
+        MyClass v2 = new MyClass("v2", "xyz");
+        MyClass v3 = new MyClass("v3", "abc");
+        arrList.add(v1);
+        arrList.add(v2);
+        arrList.add(v3);
 
+        //Lambda expression:
+        arrList.forEach((m) -> System.out.println(m.label));
     }
 
     //Collection Interface: size, clear, isEmpty, add, addAll
