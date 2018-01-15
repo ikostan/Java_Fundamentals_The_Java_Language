@@ -19,13 +19,15 @@ public class Main {
             //simpleStringFormat();
             //sampleFormatFlags();
             //sampleArgIndx();
+            //doWrite(13, 14, 15, 16, 14.75);
 
-            doWrite(13, 14, 15, 16, 14.75);
         }
         catch (Exception e){
             System.out.println(e.getMessage());
         }
     }
+
+    //Using Regular Expression in order to find strings
 
     // Using Formatter class,
     // writes content to any type that implements Appendable Interface,
