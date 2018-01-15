@@ -24,8 +24,9 @@ public class Main {
     private static void testStack(){
 
         Stack<String> myStack = new Stack<>();
-        myStack.clear();
+        myStack.push("0");
         String s = myStack.pop();
+        System.out.println(s);
     }
 
     private static void sampleDelegation(){

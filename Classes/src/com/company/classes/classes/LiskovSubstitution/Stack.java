@@ -2,15 +2,16 @@ package com.company.classes.classes.LiskovSubstitution;
 
 import java.util.ArrayList;
 
-public class Stack<T> extends ArrayList<T> {
+public class Stack<T>{
 
-    private int stackPointer;
+    private ArrayList<T> contents = new ArrayList<>();
+    private int stackPointer = 0;
 
     public void push(T item){
-        add(stackPointer++, item);
+        this.contents.add(stackPointer++, item);
     }
 
     public T pop(){
-        return remove(--stackPointer);
+        return this.contents.remove(--stackPointer);
     }
 }
