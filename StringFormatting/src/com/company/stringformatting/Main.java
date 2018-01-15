@@ -1,5 +1,6 @@
 package com.company.stringformatting;
 
+import java.io.IOException;
 import java.util.StringJoiner;
 
 public class Main {
@@ -11,7 +12,15 @@ public class Main {
         //sampleStringJoinerEmpty();
         //simpleStringFormat();
         //sampleFormatFlags();
-        sampleArgIndx();
+        //sampleArgIndx();
+    }
+
+    // Using Formatter class,
+    // writes content to any type that implements Appendable Interface,
+    // like StringBuilder or StreamWriter
+    private static void doWrite(int david, int dawson, int dillonb, int gordon, double avgDiff) throws IOException{
+
+        //TODO
     }
 
     //Argument Index sample:
