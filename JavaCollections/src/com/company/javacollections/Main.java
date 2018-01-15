@@ -1,6 +1,8 @@
 package com.company.javacollections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedList;
 
 public class Main {
@@ -10,13 +12,33 @@ public class Main {
         //sampleArrayList();
         //sampleSafeType();
         //sampleCollInterface();
-        sampleLambda();
+        //sampleLambda();
+        sampleConversion();
     }
 
     //Converting between collections and Arrays
     private static void sampleConversion(){
 
+        //Retrieving an Array:
+        ArrayList<MyClass> list = new ArrayList<>();
+        list.add(new MyClass("v1", "abc"));
+        list.add(new MyClass("v2", "xyz"));
+        list.add(new MyClass("v3", "abc"));
 
+        //Conversion with no type predefined
+        Object[] objArray = list.toArray();
+
+        //Conversion with predefined type
+        MyClass[] a1 = list.toArray(new MyClass[3]);
+
+        //Convert Array to a List:
+        MyClass[] myList = new MyClass[]{
+                new MyClass("v1", "abc"),
+                new MyClass("v2", "xyz"),
+                new MyClass("v3", "abc")
+        };
+
+        Collection<MyClass> cList = Arrays.asList(myList);
     }
 
     //Java 8 features: Lambda
