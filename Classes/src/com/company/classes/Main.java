@@ -1,13 +1,12 @@
 package com.company.classes;
 
+import com.company.classes.classes.LiskovSubstitution.Stack;
 import com.company.classes.classes.basics.ClassA;
 import com.company.classes.classes.basics.ClassB;
 import com.company.classes.classes.basics.ClassC;
 import com.company.classes.classes.Money;
 import com.company.classes.classes.Currency;
 import com.company.classes.classes.shapes.*;
-
-import java.awt.*;
 
 
 public class Main {
@@ -18,7 +17,15 @@ public class Main {
         //paramsSample();
         //strBuilderSample();
         //testMoneyClass();
-        sampleDelegation();
+        //sampleDelegation();
+        testStack();
+    }
+
+    private static void testStack(){
+
+        Stack<String> myStack = new Stack<>();
+        myStack.clear();
+        String s = myStack.pop();
     }
 
     private static void sampleDelegation(){

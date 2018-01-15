@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ee34d17-0c61-4049-b5e5-f3276d5ce1e4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/LiskovSubstitution/Stack.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/out/production/Classes/com/company/classes/Main.class" afterPath="$PROJECT_DIR$/out/production/Classes/com/company/classes/Main.class" />
       <change beforePath="$PROJECT_DIR$/src/com/company/classes/Main.java" afterPath="$PROJECT_DIR$/src/com/company/classes/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Circle.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Circle.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Line.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Line.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Shape.java" afterPath="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Shape.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,10 +23,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/classes/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="336">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#sampleDelegation#0;class#Main#0" expanded="false" />
                 <element signature="method#testMoneyClass#0;class#Main#0" expanded="false" />
                 <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />
                 <element signature="method#strBuilderSample#0;class#Main#0" expanded="false" />
@@ -36,6 +35,20 @@
                 <element signature="method#swapValues#0;class#Main#0" expanded="false" />
                 <element signature="method#inheritSample#0;class#Main#0" expanded="false" />
                 <element signature="method#testClass#0;class#Main#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/LiskovSubstitution/Stack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="334">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#191#192#0" expanded="true" />
+                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -112,6 +125,7 @@
         <option value="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Shape.java" />
         <option value="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Line.java" />
         <option value="$PROJECT_DIR$/src/com/company/classes/classes/shapes/Circle.java" />
+        <option value="$PROJECT_DIR$/src/com/company/classes/classes/LiskovSubstitution/Stack.java" />
         <option value="$PROJECT_DIR$/src/com/company/classes/Main.java" />
       </list>
     </option>
@@ -162,14 +176,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Classes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Classes" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="shapes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -363,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515973103337</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Working with classes - shapes package">
+      <created>1515974037719</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1515974037719</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -420,6 +433,7 @@
           <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sampleDelegation#0;class#Main#0" expanded="false" />
             <element signature="method#testMoneyClass#0;class#Main#0" expanded="false" />
             <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />
             <element signature="method#strBuilderSample#0;class#Main#0" expanded="false" />
@@ -453,6 +467,7 @@
           <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sampleDelegation#0;class#Main#0" expanded="false" />
             <element signature="method#testMoneyClass#0;class#Main#0" expanded="false" />
             <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />
             <element signature="method#strBuilderSample#0;class#Main#0" expanded="false" />
@@ -470,6 +485,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sampleDelegation#0;class#Main#0" expanded="false" />
             <element signature="method#testMoneyClass#0;class#Main#0" expanded="false" />
             <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />
             <element signature="method#strBuilderSample#0;class#Main#0" expanded="false" />
@@ -641,12 +657,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/classes/classes/LiskovSubstitution/Stack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#232#233#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/classes/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+        <state relative-caret-position="336">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#sampleDelegation#0;class#Main#0" expanded="false" />
             <element signature="method#testMoneyClass#0;class#Main#0" expanded="false" />
             <element signature="method#dispenseFunds#0;class#Main#0" expanded="false" />
             <element signature="method#strBuilderSample#0;class#Main#0" expanded="false" />
