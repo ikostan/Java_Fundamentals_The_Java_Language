@@ -16,8 +16,9 @@ public class Main {
         sampleConversion();
     }
 
+    //Sorting common collections
     //Common Collection Types: Collection, List, Queue, Set, SortedSet
-    private static void sampleCommonCollectionTypes(){
+    private static void sampleSorting(){
 
 
     }
